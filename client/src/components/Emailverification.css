@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Limit max width for larger screens */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 100px;
+  }
+  
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="file"],
+  button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Make inputs take full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #message {
+    color: red;
+    font-size: large;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h1, h2 {
+      font-size: 20px; /* Adjust heading size for smaller screens */
+    }
+  
+    input[type="email"],
+    input[type="text"],
+    input[type="file"],
+    button {
+      font-size: 14px; /* Adjust input and button font size */
+    }
+  }
+  
