@@ -26,13 +26,16 @@ const EmailVerification = () => {
   const verifyEmail = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/verify-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        "https://templatewebsite.onrender.com/verify-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
 
       const data = await response.json();
       if (data.success) {
